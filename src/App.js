@@ -2,7 +2,7 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Navigate,
+  
 } from "react-router-dom";
 import AdminHome from "./Admin/adminHome";
 import Dashboard from "./Admin/components/pages/Dashboard";

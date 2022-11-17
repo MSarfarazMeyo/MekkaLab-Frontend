@@ -5,8 +5,8 @@ import { useStyles } from "./HeaderStyle";
 import NavbarComponent from "./NavbarComponent";
 import Sidenav from "./Sidenav";
 import './style.css';
-import { Link, Outlet } from "react-router-dom";
-import NftSetting from "../pages/NftSetting";
+import { Outlet } from "react-router-dom";
+
 
 export default function HearderComponent() {
   // const [LastSegment, setLastSegment] = useState(
