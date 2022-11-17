@@ -1,17 +1,13 @@
-import React from 'react';
-import Appbar from './components/Header/Appbar';
+import React from "react";
+
 import { Grid } from "@mui/material";
-import HearderComponent from './components/Header/HearderComponent';
+import HearderComponent from "./components/Header/HearderComponent";
 const AdminHome = () => {
-
-
-    return (
-        <>
-                <HearderComponent />
-
-         
-        </>
-    )
-}
+  return (
+    <>
+      <HearderComponent />
+    </>
+  );
+};
 
 export default AdminHome;
