@@ -28,7 +28,15 @@ const Wallet = () => {
         <Button
           variant="contained"
           color="primary"
-          sx={{ mt: 1, width: "70%" }}
+          sx={{
+            mt: 1,
+            width: "70%",
+            "&.MuiButton-contained": {
+              background:
+                " linear-gradient(100.86deg, #4E39D7 14.47%, #C615A9 123.62%)",
+              color: "white",
+            },
+          }}
         >
           Claim Now
         </Button>
@@ -59,12 +67,16 @@ const Wallet = () => {
           Stacked Rate
         </Typography>
 
-        <Typography variant="h6">0.000%</Typography>
+        <Typography color="white" variant="h6">
+          0.000%
+        </Typography>
         <Typography marginTop={2} fontSize="medium" variant="body1">
           NFT Released
         </Typography>
 
-        <Typography variant="h6">2211</Typography>
+        <Typography color="white" variant="h6">
+          2211
+        </Typography>
       </Box>
     </>
   );

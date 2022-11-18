@@ -10,7 +10,7 @@ import React, { useContext } from "react";
 import "./style.css";
 import LanguageIcon from "@mui/icons-material/Language";
 import logo1 from "../assets/logo0.png";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import WalletModel from "./WalletModel";
 import Mycontext from "../Context/Mycontext";
@@ -18,11 +18,17 @@ import svgimg from "../assets/svgimg.svg";
 import Popover from "@mui/material/Popover";
 import PopupState, { bindTrigger, bindPopover } from "material-ui-popup-state";
 import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
-
+import { useConnection, useWallet } from "@solana/wallet-adapter-react";
 const Appbar = () => {
   const context = useContext(Mycontext);
   const { open, walletmodel, wconnected, handlewallet } = context;
 
+  const { publicKey } = useWallet();
+
+  // console.log("my connection object", connection);
+  // console.log(" my public key", publicKey?.toBase58());
+  // console.log("my transaction", sendTransaction);
+  const navigate = useNavigate();
   const handlemodel = () => {
     walletmodel(true);
   };
@@ -51,7 +57,7 @@ const Appbar = () => {
           maxWidth="xl"
           sx={{
             width: "100%",
-            backgroundColor: "#14121F",
+            backgroundColor: "#1B194B",
           }}
         >
           <Toolbar disableGutters={true}>
@@ -84,6 +90,7 @@ const Appbar = () => {
                   <span> 968554</span>{" "}
                 </Typography>
                 <WalletMultiButton />
+                {/* {publicKey?.toBase58() ? navigate("connect") : navigate("/")} */}
               </Box>
             </Box>
           </Toolbar>

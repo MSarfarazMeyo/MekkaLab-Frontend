@@ -13,7 +13,7 @@ export const useStyles = makeStyles((theme) => {
       height: "auto",
       background: "linear-gradient(68.46deg, #1B194B 25.89%, #312677 72.06%)",
       boxSizing: "border-box",
-       
+
       padding: "70px 24px 24px 270px",
       [theme.breakpoints.down("sm")]: {
         padding: "70px 24px 24px 24px",
@@ -28,10 +28,9 @@ export const useStyles = makeStyles((theme) => {
 
     toolbar: {
       display: "flex",
-      borderBottom:"2px solid #4E39D7" ,
+      borderBottom: "2px solid #4E39D7",
       justifyContent: "space-between",
-       background:"#1B194B",
-
+      background: "#1B194B",
     },
     brandBox: {
       display: "flex",
@@ -48,8 +47,8 @@ export const useStyles = makeStyles((theme) => {
     drawerPaper: {
       width: "250px",
       marginTop: "64px",
-      borderRight:"2px solid #4E39D7  !important" ,
-      borderTop:"2px solid #4E39D7  !important" ,
+      borderRight: "2px solid #4E39D7  !important",
+      borderTop: "2px solid #4E39D7  !important",
       background: "linear-gradient(68.46deg, #1B194B 25.89%, #312677 72.06%)",
       [theme.breakpoints.down("sm")]: {
         marginTop: "0px",

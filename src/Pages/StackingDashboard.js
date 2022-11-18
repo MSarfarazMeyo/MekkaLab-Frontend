@@ -57,14 +57,38 @@ const StackingDashboard = () => {
           justifyContent="flex-end"
         >
           <Button
-            sx={{ width: "40%", borderLeft: 1 }}
+            sx={{
+              width: "40%",
+              borderLeft: 1,
+              "&.MuiButton-contained": {
+                background:
+                  " linear-gradient(100.86deg, #4E39D7 14.47%, #C615A9 123.62%)",
+                color: "white",
+              },
+              "&.MuiButton-outlined": {
+                border: "2px solid  #44327E",
+                color: "white",
+              },
+            }}
             onClick={handlereward}
             variant={rewardtbtnvariant}
           >
             Reward
           </Button>
           <Button
-            sx={{ width: "40%", borderLeft: 1 }}
+            sx={{
+              width: "40%",
+              borderLeft: 1,
+              "&.MuiButton-contained": {
+                background:
+                  " linear-gradient(100.86deg, #4E39D7 14.47%, #C615A9 123.62%)",
+                color: "white",
+              },
+              "&.MuiButton-outlined": {
+                border: "2px solid  #44327E",
+                color: "white",
+              },
+            }}
             onClick={handlewallet}
             variant={walletbtnvariant}
           >

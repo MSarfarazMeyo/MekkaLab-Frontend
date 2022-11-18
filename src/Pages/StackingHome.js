@@ -215,27 +215,29 @@ const StackingHome = () => {
             </Typography>
 
             <Box borderTop={1} bordercolor="white" color="white">
-              <Typography mt={1} mb={1} variant="h6">
+              <Typography color="white" mt={1} mb={1} variant="h6">
                 NFT Released
               </Typography>
-              <Typography mb={4} variant="h5">
+              <Typography color="white" mb={4} variant="h5">
                 2211
               </Typography>
             </Box>
             <Box borderTop={1} bordercolor="white" color="white">
-              <Typography mt={1} mb={1} variant="h6">
+              <Typography color="white" mt={1} mb={1} variant="h6">
                 NFT Staked Rate
               </Typography>
-              <Typography mb={4} variant="h5">
+              <Typography color="white" mb={4} variant="h5">
                 0.00%
               </Typography>
             </Box>
             <Box borderTop={1} bordercolor="white" color="white">
-              <Typography mt={1} mb={1} variant="h6">
+              <Typography color="white" mt={1} mb={1} variant="h6">
                 Tokens Distributed
               </Typography>
-              <Typography variant="h5">0.0000</Typography>
-              <Typography mb={4} variant="h5">
+              <Typography color="white" variant="h5">
+                0.0000
+              </Typography>
+              <Typography color="white" mb={4} variant="h5">
                 $FLINT
               </Typography>
             </Box>

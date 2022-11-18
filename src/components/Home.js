@@ -1,14 +1,12 @@
-<<<<<<< HEAD
-import React from 'react'
-
-import NavbarComponent from '../Admin/components/Header/NavbarComponent'
-=======
-import { Box } from "@mui/material";
 import React from "react";
+
+import NavbarComponent from "../Admin/components/Header/NavbarComponent";
+
+import { Box } from "@mui/material";
+
 import { Outlet } from "react-router-dom";
 import Appbar from "./Appbar";
 import Footer from "./Footer";
->>>>>>> 5bd063f07f40998ee350791d2c38e9de47bf4029
 
 const Home = () => {
   return (
@@ -18,10 +16,11 @@ const Home = () => {
       </Box>
       <Box
         height="80%"
-        bgcolor="#14121F"
         sx={{
           borderTop: 2,
           borderColor: "#ADD8E6",
+          background:
+            "linear-gradient(68.46deg, #1B194B 25.89%, #312677 72.06%)",
         }}
       >
         <Outlet />

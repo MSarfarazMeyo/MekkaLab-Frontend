@@ -72,12 +72,16 @@ const Reward = () => {
           Stacked Rate
         </Typography>
 
-        <Typography variant="h6">0.000%</Typography>
+        <Typography color="white" variant="h6">
+          0.000%
+        </Typography>
         <Typography marginTop={2} fontSize="medium" variant="body1">
           NFT Released
         </Typography>
 
-        <Typography variant="h6">2211</Typography>
+        <Typography color="white" variant="h6">
+          2211
+        </Typography>
       </Box>
     </>
   );

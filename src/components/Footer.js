@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <Box
       display="flex"
-      bgcolor="#14121F"
+      bgcolor="#1B194B"
       justifyContent="space-between"
       height="100%"
       alignItems="center"

@@ -1,9 +1,4 @@
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AdminHome from "./Admin/adminHome";
 import Dashboard from "./Admin/components/pages/Dashboard";
 import NftSetting from "./Admin/components/pages/NftSetting";
@@ -17,21 +12,29 @@ import Others from "./Admin/components/pages/sub-pages/Other";
 import StackingHome from "./Pages/StackingHome";
 import StackingDashboard from "./Pages/StackingDashboard";
 import ContextStore from "./Context/ContextStore";
+import { useWallet } from "@solana/wallet-adapter-react";
 
 function App() {
+  const { publicKey } = useWallet();
+
+  var key = publicKey?.toBase58();
+
+  console.log("my key", key);
+
   return (
     <Router>
       <ContextStore>
         <Routes>
           <Route path="/" element={<Home />}>
-            <Route index element={<StackingHome />} />
-            <Route path="connect" element={<StackingDashboard />} />
+            <Route
+              index
+              element={key ? <StackingDashboard /> : <StackingHome />}
+            />
+            {/* <Route path="connect" element={} /> */}
           </Route>
 
           <Route path="/admin" element={<AdminHome />}>
-            <Route path="" element={<AdminHome />} />
-
-            <Route path="dashboard" element={<Dashboard />} />
+            <Route index element={<Dashboard />} />
             <Route path="nft-settings" element={<NftSetting />} />
             <Route path="token-distribution" element={<TokenDistribution />} />
             <Route path="seo" element={<Seo />} />

@@ -10,15 +10,8 @@
     "@material-ui/icons": "^4.11.3",
     "@mui/icons-material": "^5.10.9",
     "@mui/material": "^5.10.13",
-<<<<<<< HEAD
     "@mui/x-data-grid": "^5.17.11",
     "@mui/x-date-pickers-pro": "^5.0.8",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "antd": "^4.24.2",
-    "canvasjs": "^1.8.3",
-=======
     "@solana/wallet-adapter-base": "^0.9.18",
     "@solana/wallet-adapter-react": "^0.15.24",
     "@solana/wallet-adapter-react-ui": "^0.9.22",
@@ -27,8 +20,9 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "antd": "^4.24.2",
+    "canvasjs": "^1.8.3",
     "material-ui-popup-state": "^4.1.0",
->>>>>>> 5bd063f07f40998ee350791d2c38e9de47bf4029
     "react": "^18.2.0",
     "react-color": "^2.19.3",
     "react-dom": "^18.2.0",
